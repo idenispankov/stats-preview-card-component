@@ -30,6 +30,7 @@
 }
 
 .card__heading {
+  margin: 0;
   font-weight: bold;
   font-size: 28px;
   line-height: 114%;
@@ -75,4 +76,63 @@
   line-height: 25px;
   letter-spacing: 1px;
   opacity: 0.6;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    max-width: 1100px;
+    height: 446px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+  }
+  .card__image {
+    background: url('./images/image-header-desktop.jpg') no-repeat center
+      center/contain;
+    border-radius: 0 8px 8px 0;
+    min-width: 540px;
+    height: 446px;
+  }
+
+  .card__text_container {
+    padding: 0;
+    padding-top: 71px;
+    padding-left: 72px;
+    padding-right: 95px;
+    padding-bottom: 59px;
+  }
+  .card__heading {
+    max-width: 403px;
+    text-align: start;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 25px;
+  }
+  .card__text {
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 374px;
+    text-align: start;
+    margin-bottom: 72px;
+  }
+  .card__list {
+    display: flex;
+  }
+  .card__list_item {
+    margin: 0;
+    margin-right: 63px;
+    text-align: start;
+  }
+  .card__list_item:last-child {
+    margin: 0;
+  }
+  .card__list_item_heading {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .card__list_item_text {
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
 }
